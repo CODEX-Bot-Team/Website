@@ -1,42 +1,55 @@
 body {
     background-color: #2C2F33;
     size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    overflow: hidden;
 }
 
-.topbar {
-    background-color: #23272A;
-
-    height: 75%;
-    width: 100%;
-    position: absolute;
-    margin: auto;
-
-    top: 0px;
-    left: 0px;
-
-    color: #FFFFFF;
+.hero {
     text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10% 0;
+    font-size: 20pt;
+    
+}
+.hero p {
+    line-height: 1.2em;
+}
 
+.page-header {
+    background-color: #2C2F33;
+}
+
+.logo-text {
+    vertical-align: middle;
+    font-size:50px;
+}
+
+.typewrite {
     text-decoration: none;
 }
 
-.topbar-left {
-    float: left;
-    font-size: 50px;
-    left: 5px;
+.typewrite > .wrap {
+    color: #FFFFFF;
 }
 
-.topbar-left a {
-    font-size: 100%;
+.button {
+    display: inline-block;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 2px;
+    padding: 10pt;
+    margin-top: 20px;
+    background-color: #5865F2;
+    text-align: center;
+    
 }
 
-.topbar-right {
-    float: right;
+.button a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
 }
-
-.logo-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
