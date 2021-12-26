@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>CODEX</title>
+
+        <link rel="stylesheet" href="Static/Style/Main.css">
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Static/Style/Main.css">
-        <title>CODEX</title>
-        <script src="Static/JavaScript/Home.js"></script>
+
+        <script>
+            
+            function Loaded() {
+                console.log("Loaded")
+                Link = document.getElementById("Login")
+                Stay = document.getElementById("Stay")
+
+                function Clicked() {
+                    console.log(Stay.checked)
+                    Link.href = "https://panel.codex-bot.ga/auth/login?stay=" + Stay.checked
+                }
+
+                Stay.onclick = Clicked
+                Clicked()
+            }
+
+            
+            
+            window.onload = Loaded
+        </script>
     </head>
 
     <body>
+
+        <h1>Welcome to CODEX</h1>
+        <h2>A advanced hosting service for small projects</h2>
         
-        <header class="page-header">
-            <div class="hero">
-                <span class="logo-text">
-                    <img src="Static/Images/Logo.gif" width="400px" height="400px" style="vertical-align: middle;">
-
-                    <br>
-                    <br>
-                    <a>CODEX</a>
-                    <a> is:</a>
-                    <br>
-
-                    <a href="#" class="typewrite" data-period="2000" data-type='[ "A codeable bot", "A Fast bot", "A all in one bot", "LUA based", "Package based" ]'>
-                        <span class="wrap"></span>
-                    </a>
-                    <br>
-                    
-                </span>
-                
-                <div class="button">
-                    <a href="https://panel.codex-bot.ga/login">
-                        <strong>
-                            <a>Login with</a>
-                            <br>
-                            <img src="https://discord.com/assets/a69bd473fc9eb435cf791b8beaf29e93.png" alt="Discord" height="50px">
-                        </strong>
-                    </a>
-                </div>
-                
-            </div>
-            
-        </header>
+        <a href="" id="Login" style="color:white">Login with discord</a>
+        <br>
+        <input type="checkbox" id="Stay" checked="true"><a>Stay Logged in</a>
 
     </body>
 </html>
